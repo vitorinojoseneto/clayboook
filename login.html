@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="pt-Ao">
+
+<head>
+
+    <title>Log in</title>
+
+    <!-----TITTLE AREA-->
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-----META AREA-->
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-----LINK AREA-->
+</head>
+
+<body>
+
+    <section id="log_in_section">
+
+        <div class="modal">
+
+            <div class="logotipo">C-LAYBooK</div>
+
+            <form action="" id="form">
+
+                <legend class="legend">Entrar no Claybook</legend>
+
+                <input type="email" name="login" id="input" placeholder="Email ou Telefone" required>
+
+                <input type="password" name="login" id="input" placeholder="Senha" required>
+
+                <button type="reset"  class="button_log_in">Entrar</button>
+
+                <div class="help_usrs">
+
+                    <a href="#" class="anchor_forgot these">Esqueceu a conta?</a>
+
+                    <a href="#" class="anchor_create_account these"  onclick="toggle()">Cadastra-se no Claybook</a>
+
+                </div>
+
+            </form>
+
+
+
+
+
+            <div id="cadastrar">
+
+                <h2 class="h2_cadastrar">THIS APP IS ONLY TO YOUTH</h2>
+
+                 <div class="logotipo">C-LAYBooK</div>
+
+                 <form action="" id="white">
+
+                <legend class="legend go_go">go GO GO</legend>
+
+                <input type="text" name="login" id="input_2" placeholder="Any Name" required>
+
+                <input type="text" name="login" id="input_2" placeholder="Nickname" required>
+
+                <input type="email" name="login" id="input_2" placeholder="Email or Telephone Number" required>
+
+                <input type="date" name="login" id="input_2"required>
+
+                <input type="password" name="login" id="input_2" placeholder="New Password " required>
+
+                <button type="reset"  class="button_log_in">Registar-te</button>
+
+                <div class="help_usrs">
+
+                    <a href="#" class="anchor_forgot these">Do you have an account already?</a>
+
+                    <a href="login.html" class="anchor_forgot these">Preview Page</a>
+
+                </div>
+
+            </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        function toggle() {
+
+            var x = document.getElementById("cadastrar");
+
+
+
+            if(x.style.display == "none") {
+
+                x.style.display = "block";
+
+            }
+
+            else {
+
+                x.style.display = "none";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+

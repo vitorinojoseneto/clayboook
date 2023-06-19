@@ -1,0 +1,876 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-family: sans-serif;
+}
+body{
+    background: #F2F3F7;
+}
+.container{
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+}
+#log_in_section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc9;
+}
+.modal{
+    display: block;
+    margin: 100px auto;
+    width: 25%;
+}
+.logotipo{
+    margin: 15px 0;
+    text-align: center;
+    letter-spacing: 5px;
+    font: bold 25pt  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background:linear-gradient(40deg,orange 40%,orangered 60%, orange 50%,orangered);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+#form{
+    display:flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px #0007;
+    background-color: white;
+}
+.legend{
+    color: #0009;
+    text-align: center;
+    margin: 20px 0;
+    font: bold 15pt arial;
+}
+#input{
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc9;
+    border-radius: 5px;
+    font-size: 14pt;
+    background-color: white;
+}
+.button_log_in{
+    padding: 12px;
+    margin: 5px 0;
+    color: white;
+    font: bold 13pt arial;
+    text-align: center;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    background-color: orangered;
+}
+.help_usrs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:12px 0 15px 0;
+}
+.these{
+    font: 100 12px arial;
+    color: rgb(97, 97, 212);
+}
+#cadastrar{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 950px;
+    height:100%;
+    box-shadow: 3px 3px 9px #000;
+    border-radius: 5px;
+    background: url('../image/imagenstostory/tres-jovens-lindas-meninas-sorridentes-em-roupas-de-jeans-casual-de-verao-na-moda-mulheres-sexy-despreocupadas-posando-modelos-positivos-em-oculos-de-sol_158538-4730.webp');
+    background-size: cover;
+    border: 3px solid;
+    border-top-color: yellow;
+    border-right-color: orangered;
+    border-left-color: green;
+    border-bottom-color: aqua;
+}
+.h2_cadastrar {
+    margin:100px 0px 15px 0px;
+    text-align: center;
+    color: aqua;
+}
+#white{
+    background: transparent;
+    display:flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.go_go{
+    background: linear-gradient(30deg,yellow,yellow,yellow,yellow,green,green,orangered,orangered,orangered);
+    display: block;
+    margin:10px auto;
+    width: 20%;
+    font-size: 18pt;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#input_2{
+    padding: 12px;
+    margin: 5px 0;
+    border-bottom: 1px solid #fff8;
+    font-size: 14pt;
+    background-color:transparent;
+    color: white;
+}
+::placeholder {
+    color: white;
+}
+/**___________________AREA DO LOGIN ACIMA A BAIXA PAGE HOME ____________*******************************************/
+.header_master{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 3px 0px 5px #0007 ;
+    background-color: white;
+    z-index: 100;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logotipo_central{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 22%;
+}
+.logo_text{
+    width: 20px;
+    height: 20px;
+    border: 10px solid orangered;
+    border-right-color: transparent;
+    border-radius: 50%;
+}
+.just{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fa-search{
+    background: #F2F3F7;
+    padding: 12px;
+    color: gray;
+    border-radius: 50px 0 0 50px;
+}
+.input_header{
+    background:#F2F3F7;
+    font-size: 11pt;
+    padding: 12px;
+    color: black;
+    text-align: left;
+    border-radius: 0 50px 50px 0;
+}
+.navbar{
+    width: 50%;
+}
+.listener_navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.listener_navbar li{
+    text-align: center;
+    font-size: 20pt;
+    width: 20%;
+    padding: 20px 0;
+}
+.home{
+    border-bottom: 4px solid orangered;
+}
+.anchor_navbar{
+    color:gray;
+}
+.loop_chat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 19%;
+}
+li img{
+    width: 100%;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.loop_chat li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 18pt;
+    text-align: center;
+    background-color: #F2F3F7;
+    border-radius: 50%;
+}
+li .chat_loop{
+    color: black;
+}
+/******_______________________________________*******************************_____________________*************************************************/
+.principal{
+    width: 100%;
+}
+.content_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+.content_lateral_left{
+    position: fixed;
+    top: 74px;
+    left: 14px;
+    width: 22%;
+    height: 500px;
+}
+.div1_left img{
+    width: 14%;
+    height: 14%;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.div1_left p{
+    font: 200 13pt arial;
+}
+.left{
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+}
+.left p {
+    font-size: 20pt;
+    margin-right: 15px;
+    background:linear-gradient(40deg,orangered 70%, orange 60%,orangered);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    cursor: pointer;
+}
+.left a{
+    font: 200 13pt arial;
+}
+.left b{
+    color: black;
+}
+.div6_left{
+    width: 70%;
+    border-bottom: 1px solid #ccc;
+}
+/*****************************************************/
+.content_central{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 2860px;
+}
+.story{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.size{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 19%;
+    height: 200px;
+    color: white;
+    font: bold 13pt arial;
+    padding-bottom: 20px;
+    border-radius:12px;
+    text-shadow: 5px 5px 9px #000;
+    box-shadow: 2px 5px 10px #0009;
+}
+.div1{
+    background: url('../image/imagenstostory/kisspng-computer-keyboard-microsoft-tablet-pc-laptop-perso-progate-ruby-rails-5d1f44debb13a5.4898536215623303347663.jpg');
+    background-size: cover;
+    background-position:center ;
+}
+.div1 p {
+    width: 100%;
+    height: 60px;
+    margin-top: 160px;
+    text-align: center;
+    border-radius:0 0 12px 12px ;
+    background:#000 ;
+    filter: blur(1px);
+}
+.div2{
+    background: url('../image/imagenstostory/pexels-cottonbro-3206080.jpg');
+    background-size: cover;
+    background-position:center ;
+}
+
+.div3{
+    background: url('../image/imagenstostory/pexels-yuri-manei-2312250.jpg');
+    background-size: cover;
+    background-position:center ;
+}
+
+.div4{
+    background: url('../image/imagenstostory/tres-jovens-lindas-meninas-sorridentes-em-roupas-de-jeans-casual-de-verao-na-moda-mulheres-sexy-despreocupadas-posando-modelos-positivos-em-oculos-de-sol_158538-4730.webp');
+    background-size: cover;
+    background-position:center ;
+}
+.div5{
+    background: url('../image/imagenstostory/de98b274aabd44a82442581c009a0fa8.jpg');
+    background-size: cover;
+    background-position:center ;
+}
+.info{
+    display: block;
+    width: 80%;
+    height: 300px;
+    padding: 12px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px #0009;
+}
+.tv{
+    display: flex;
+    justify-content: space-between;
+}
+.content_info{
+    display: block;
+    margin-top: 12px;
+}
+.heading_info{
+    text-align: left;
+    font: bold 18pt arial;
+}
+.para1_info{
+    text-align: left;
+    font: 200 14pt arial ;
+    margin: 14px 0;
+}
+.para2_info{
+    text-align: left;
+    font: 100 12pt arial;
+}
+.anchor_info{
+    display: block;
+    width: 70%;
+    margin: 15px auto;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: white;
+    background: rgba(16, 122, 243, .9);
+}
+.info2{
+    display: block;
+    width: 80%;
+    height: 100px;
+    padding: 12px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 3px 3px 7px #0009;
+}
+.post{
+    display: flex;
+}
+.post img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+.post input{
+    width: 80%;
+    padding: 10px;
+    font-size: 12pt;
+    background: #F2F3F7;
+    margin-left: 12px;
+    border: 1px solid gray;
+    border-radius: 50px;
+
+}
+.media2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px;
+    margin-top: 12px;
+}
+div .media2_1{
+    font-size: 14pt;
+}
+.live{
+    margin-right:5px;
+    color: red;
+}
+div .media2_2{
+    font-size: 14pt;
+}
+.gallery{
+    margin-right: 5px;
+    color: green;
+}
+
+.info3{
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    margin: 20px -10px;
+    box-shadow: 5px 5px 10px #0009;
+}
+.post_info3{
+    background: yellow;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.liveroom{
+    background: linear-gradient( violet 40%,red 50%,green 80%);
+    font-size: 18pt;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.post_info3 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+div .slide_circle{
+    width: 70%;
+    height: 30px;
+}
+.info4{
+    margin: 50px 0 30px 0;
+}
+.info4 img{
+    display: block;
+    margin:auto -62px;
+    width: 650px;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.info5{
+    margin-bottom: 14px;
+}
+.info5 img{
+    display: block;
+    margin:auto -62px;
+    width: 650px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.info6 video{
+    display: block;
+    margin:auto -62px;
+    height: 500px;
+    width: 650px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.loading{
+    display: block;
+    margin: 50px auto;
+    width: 20px;
+    height: 20px;
+    border: 10px solid orangered;
+    border-top-color: transparent;
+    border-radius:50%;
+    animation: load 2s linear infinite;
+}
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*********************************************************/
+.content_lateral_right{
+    position: fixed;
+    top: 74px;
+    right: 14px;
+    width: 19%;
+    height: 500px;
+    padding: 12px;
+    overflow: auto;
+}
+.content_clright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 6px #ccc;
+    border-radius: 9px;
+    background-color: white;
+}
+.game{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 30px;
+    margin: 9px 0;
+    font-size: 20pt;
+}
+.gameicon{
+    background:linear-gradient(40deg,orangered 70%, orange 60%,orangered);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+.content_clright2{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 9px 0;
+}
+.first_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+}
+.first_left img{
+    width: 90%;
+    box-shadow: 1px 1px 4px #ddd;
+    border-radius: 10px;
+}
+.first_left h3{
+    margin: 6px 0;
+    text-align: left;
+    font-size: 13pt;
+}
+.first_left p{
+    font-size: 11px;
+    color: #0009;
+}
+.content_clright a{
+    color: black;
+}
+
+/*------------------------AREA PARA HIDE N SHOW-------------------------------*/
+#play_circle{
+  position: absolute;
+  top: 75px;
+  left: 340px;
+  display: none;
+  width: 50%;
+  background: #F2F3F7;
+  box-shadow: 3px 3px 5px transparent;
+  z-index: 10;
+}
+.info6_hide video{
+    display: block;
+    margin:auto 15px;
+    height: 500px;
+    width: 650px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.info6_hide p{
+  font-size: 16pt;
+  margin: 14px 0;
+}
+
+#shopping{
+  position: absolute;
+  top: 75px;
+  left: 340px;
+  display:  none;
+  width: 50%;
+  background:#F2F3F7;
+  box-shadow: 3px 3px 5px transparent;
+  z-index: 10;
+  background-color: yellow;
+}
+
+.post{
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.post p{
+	margin: 9px 20px 9px 20px;
+	padding: 10px 5px;
+	border:1px solid #ccc3;
+	background: #ccc1;
+}
+.post img{
+	display: block;
+	margin: 0 auto;
+	width: 93%;
+	border-radius: 10px;
+	border:1px solid #ccc3;
+}
+.post div{
+	display: block;
+	margin: 10px auto;
+	width: 93%;
+}
+
+.help_users{
+	display: flex;
+  flex-direction: row;
+	justify-content: space-between;
+	width: 70%;
+	margin: 20px 0 0 0;
+}
+.help_users a{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 12px;
+	font-size: 14pt;
+	border: 2px solid;
+	border-radius: 50px;
+	width: 35%;
+	border-top-color: red;
+	border-right-color: yellow;
+	border-left-color: green;
+	border-bottom-color:blue;
+	background: darkviolet;
+	color: white;
+}
+div .divx{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.divx a{
+	width: 27%;
+	background: transparent;
+}
+.divx a i {
+	color: red;
+	cursor: pointer;
+}
+.divx a i:active{
+	color: blue;
+}
+
+#users{
+  position: absolute;
+  top: 75px;
+  left: 340px;
+  display: none;
+  width: 50%;
+  background: yellow;
+  box-shadow: 3px 3px 5px transparent
+}
+
+#games{
+  position: absolute;
+  top: 75px;
+  left: 340px;
+  display: none;
+  width: 50%;
+  background: violet;
+
+  box-shadow: 3px 3px 5px transparent
+}
+
+
+#chilchats{
+  position: fixed;
+  top: 75px;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 93%;
+  background: linear-gradient(50deg, red, green,cyan);
+  box-shadow: 3px 3px 5px transparent;
+  z-index: 1;
+}
+#chilchats h1{
+    text-align: center;
+    margin-top: 30px;
+    animation-name: land;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes land {
+    0% {font-size: 20pt;font-family: sans-serif;}
+    10% {font-size: 30pt;font-family: fantasy;color: violet;}
+    20% {font-size: 20pt; font-family: monospace;color: yellow;}
+    30% {font-size: 30pt;font-family: 'Courier New', Courier, monospace;color: turquoise;}
+    40% {font-size: 20pt;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: red;}
+    50% {font-size: 30pt;font-family: Arial, Helvetica, sans-serif;color: greenyellow;}
+    60% {font-size: 20pt;font-family: cursive;color: lawngreen;}
+    70% {font-size: 30pt;}
+
+}
+#hot_chat{
+  position: fixed;
+  top: 98px;
+  left: 15px;
+  width: 18%;
+  height: 78%;
+  padding: 10px;
+  box-shadow: 4px 5px 17px #ddd;
+  border-radius: 5px;
+  overflow: auto;
+}
+.amigo_chat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: green;
+  width: 100%;
+  padding: 2px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.amigo_chat img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.amigo_chat h5{
+  font-size: 12pt;
+  color: white;
+}
+
+#audio{
+  position: fixed;
+  top: 280px;
+  left: 300px;
+  display: none;
+  width: 23%;
+  height: 50%;
+  padding: 10px;
+  box-shadow: 4px 5px 12px #ddd;
+  border-radius: 5px;
+}
+
+#hahaha{
+  position: fixed;
+  top: 280px;
+  left: 650px;
+  display: none;
+  width: 23%;
+  height: 50%;
+  padding: 10px;
+  box-shadow: 4px 5px 12px #ddd;
+  border-radius: 5px;
+}
+
+#multimeria{
+  position: fixed;
+  top: 280px;
+  left: 990px;
+  display: none;
+  width: 23%;
+  height: 50%;
+  padding: 10px;
+  box-shadow: 4px 5px 12px #ddd;
+  border-radius: 5px;
+}
+.heading_chat{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.heading_chat a{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 50%;
+  color: white;
+}
+.heading_chat a img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-top-color: red;
+    border-right-color: yellow;
+    border-left-color: transparent;
+    border-bottom-color:blue;
+}
+.heading_chat_icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  font-size: 18pt;
+}
+.heading_chat_icons i{
+  color: orangered;
+}
+.talk{
+  position: absolute;
+  top: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+.talk input{
+ width: 80%;
+ padding: 5px;
+ border-radius:50px;
+ border: 2px solid;
+ border-top-color: red;
+ border-right-color: yellow;
+ border-left-color: green;
+ border-bottom-color:blue;
+ font-size: 13pt;
+ background: transparent;
+}
+.talk button{
+  width: 32px;
+  height: 32px;
+  border-radius:50%;
+  border: 2px solid;
+  border-top-color: red;
+  border-right-color: yellow;
+  border-left-color: green;
+  border-bottom-color:blue;
+  font-size: 13pt;
+  background: transparent;
+}
+.talk button i{
+  color: orangered
+}
